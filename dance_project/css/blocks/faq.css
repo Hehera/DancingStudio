@@ -1,0 +1,137 @@
+.title-faq {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 158px;
+  margin-bottom: 80px;
+}
+.title-faq::after {
+  top: 18px;
+  position: absolute;
+  content: "";
+  width: 77px;
+  height: 30px;
+  font-weight: 700;
+  font-size: 32px;
+  transform: translateX(-24%);
+  line-height: 39px;
+  background-image: url(./../../img/faq/FAQ-icon.svg);
+  z-index: -1;
+}
+.title-faq::before {
+  position: absolute;
+  bottom: -8px;
+  content: "";
+  width: 1316px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.faq-menu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.faq-menu::after {
+  position: absolute;
+  width: 706px;
+  height: 672px;
+  left: 1595px;
+  top: -240px;
+  background: rgba(93, 201, 216, 0.1);
+  filter: blur(97px);
+  content: "";
+  z-index: -1;
+}
+.faq-menu::before {
+  position: absolute;
+  content: "";
+  width: 909px;
+  height: 598px;
+  z-index: -1;
+  left: 362px;
+  background-image: url(./../../img/faq/fag-bcg.png);
+  transform: translate(470px, 500px);
+}
+.faq {
+  position: relative;
+  margin-left: 100px;
+  max-width: 700px;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #fff;
+  cursor: pointer;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blur::after {
+  position: absolute;
+  content: "";
+  background: rgba(93, 201, 216, 0.74);
+  filter: blur(150px);
+  width: 179px;
+  height: 149px;
+  transform: translate(-471px, 844px);
+}
+.question h3 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1.4s ease;
+}
+.answer a {
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  margin-bottom: 90px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  padding: 10px 55px;
+  width: 312px;
+  height: 38px;
+
+  background: #438790;
+}
+.answer p {
+  margin-top: 40px;
+  width: 467px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 149.9%;
+}
+
+.faq.active .answer {
+  max-height: 300px;
+  animation: fade 1s ease-in-out;
+}
+.faq.active svg {
+  transform: rotate(180deg);
+}
+
+svg {
+  transition: transform 0.5 ease-in;
+}
+@keyframes fade {
+  from {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

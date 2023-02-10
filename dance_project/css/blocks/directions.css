@@ -1,0 +1,130 @@
+.direction {
+  margin-top: -320px;
+}
+.slider_row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 59px;
+}
+.slider_row h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+.slider_row p {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 143.4%;
+  width: 308px;
+}
+.direction-01:hover {
+  transform: translateY(5%);
+}
+.direction-01 {
+  transition: transform 0.8s cubic-bezier(0.545, -0.600, 0.000, 0.195);
+}
+.direction-02:hover {
+  transform: translateY(5%);
+}
+.direction-02 {
+  transition: transform 0.8s cubic-bezier(0.545, -0.600, 0.000, 0.195);
+}
+.direction-03:hover {
+  transform: translateY(5%);
+}
+.direction-03 {
+  transition: transform 0.8s cubic-bezier(0.545, -0.600, 0.000, 0.195);
+}
+.direction-img-01,
+.direction-img-02,
+.direction-img-03 {
+  padding-top: 11px;
+  padding-left: 10px;
+  position: relative;
+  width: 310px;
+  height: 283px;
+}
+.direction-img-01:after {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 310px;
+  height: 283px;
+  left: -10px;
+  top: 0.5px;
+  border: 1px solid #dddcdc;
+}
+.direction-img-02:after {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 310px;
+  height: 283px;
+  left: -10px;
+  top: 0.5px;
+  border: 1px solid #dddcdc;
+}
+.direction-img-03:after {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 310px;
+  height: 283px;
+  left: -10px;
+  top: 0.5px;
+  border: 1px solid #dddcdc;
+}
+.directions {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+}
+.directions::after {
+  top: 18px;
+  position: absolute;
+  content: "";
+  width: 196px;
+  height: 26px;
+  font-weight: 700;
+  font-size: 32px;
+  transform: translateX(-15%);
+  line-height: 39px;
+  background-image: url(./../../img/Directionsandcoahes/direction-icon.svg);
+}
+.directions::before {
+  position: absolute;
+  bottom: -8px;
+  content: "";
+  width: 1316px;
+  height: 2px;
+  background-color: #fff;
+}
+.direction-icons-arrows {
+  position: relative;
+  width: 47px;
+  height: 36px;
+}
+.direction-icon-next {
+  transform: translate(1400px, -264px);
+}
+
+.direction-icon-prev {
+  transform: translate(-153px, -264px);
+}
+
+.direction-01,
+.direction-02,
+.direction-03 {
+  margin-left: 60px;
+}
+

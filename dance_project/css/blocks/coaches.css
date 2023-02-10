@@ -1,0 +1,123 @@
+.coaches {
+  margin-top: 200px;
+}
+.coaches_row {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+}
+
+.coach-title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+}
+.coach-title::after {
+  top: 18px;
+  position: absolute;
+  content: "";
+  width: 196px;
+  height: 26px;
+  font-weight: 700;
+  font-size: 32px;
+  transform: translateX(-15%);
+  line-height: 39px;
+  background-image: url(./../../img/Directionsandcoahes/Coaches-icon.svg);
+}
+.coach-title::before {
+  position: absolute;
+  bottom: -8px;
+  content: "";
+  width: 1316px;
+  height: 2px;
+  background-color: #fff;
+}
+.coaches-img {
+  /* transform: translate(162px, -20px); */
+  transform: translateX(140px);
+  padding: 10px;
+  padding-left: 14.5px;
+  padding-right: 15.5px;
+  position: relative;
+  width: 505px;
+  height: 431px;
+}
+.coaches-img::after {
+  position: absolute;
+  content: "";
+  width: 535px;
+  left: 0;
+  top: 7px;
+  height: 431px;
+  border: 2px solid #dddcdc;
+  z-index: -1;
+}
+.coaches-content {
+  transform: translate(-500px, 10px);
+}
+.coaches-content p {
+  color: #ffffff94;
+  width: 424px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 162.4%;
+  margin-bottom: 26px;
+}
+.coaches-content h2 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+}
+.coaches-content h3 {
+  color: #ffffff94;
+  width: 424px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 162.4%;
+  margin-bottom: 26px;
+}
+.coaches-content span {
+  color: #fff;
+}
+.coaches-content p {
+  color: #ffffff94;
+}
+.coaches-content * {
+  margin-bottom: 22px;
+}
+/* SLICK SLIDER  */
+/* ************************ */
+.prev {
+  transition: 0.3s ease-in;
+  transform: translate(554px, 50px);
+  position: absolute;
+}
+
+.next {
+  transform: translate(722px, 501px);
+  position: absolute;
+}
+
+.slick-dots li.slick-active button:before {
+  border: 1px solid #fff !important;
+  background-color: #fff;
+  /* border: aqua; */
+  border-radius: 50%;
+  opacity: 0.75;
+  color: #fff;
+}
+.blur-06::before {
+  position: absolute;
+  content: "";
+  background: rgba(93, 201, 216, 0.74);
+  filter: blur(150px);
+  width: 179px;
+  height: 149px;
+  transform: translate(1324px, -294px);
+}

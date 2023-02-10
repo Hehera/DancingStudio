@@ -1,0 +1,84 @@
+.homepage-01 {
+  margin-top: 400px;
+  justify-content: space-between;
+  margin-bottom: 73px;
+}
+.about-us-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-weight: 700;
+  line-height: 49px;
+}
+.about-us-title::after {
+  position: absolute;
+  bottom: -8px;
+  content: "";
+  width: 1316px;
+  height: 2px;
+  background-color: #fff;
+}
+.about-us-title::before {
+  content: "";
+  position: absolute;
+  width: 174px;
+  height: 26px;
+  left: 44%;
+  bottom: 10%;
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 43px;
+  background: url(./../../img/homepages_images/about-us-img.svg);
+}
+.homepage_row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homepage-img {
+  margin-left: 55px;
+  margin-right: 70px;
+  position: relative;
+  margin-top: 170px;
+  width: 473px;
+  height: 484px;
+}
+.homepage-img::after {
+  box-sizing: border-box;
+  position: absolute;
+  width: 535px;
+  height: 558px;
+  border: 1px solid #dddcdc;
+  content: "";
+  left: -62px;
+  top: -109px;
+  z-index: -1;
+}
+.about-us-text {
+  position: relative;
+  margin-left: 30px;
+  margin-top: 120px;
+  width: 640px;
+  font-size: 18px;
+  line-height: 179.9%;
+}
+.blur-09::after {
+  transform: translate(759px, 700px);
+  position: absolute;
+  content: "";
+  bottom: 0;
+  width: 647px;
+  height: 672px;
+  background: rgba(93, 201, 216, 0.1);
+  filter: blur(97px);
+}
+.about-us-text span {
+  font-family: "Oooh Baby";
+  font-size: 30px;
+  line-height: 49px;
+}
+.about-us-text p {
+  margin-top: 30px;
+  text-indent: 70px;
+}

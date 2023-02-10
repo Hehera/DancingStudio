@@ -1,0 +1,130 @@
+.media {
+  margin-top: 440px;
+}
+.media_row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 63px;
+  margin-top: 73px;
+}
+
+.media_row_02 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 63px;
+  margin-top: 63px;
+}
+.media-card-01,
+.media-card-02,
+.media-card-03,
+.media-card-04,
+.media-card-05,
+.media-card-06 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 268px;
+  height: 268px;
+  background: url(./../../img/price/training-card.png) no-repeat;
+  background-size: cover;
+}
+.media-card-02 {
+  background-image: url(./../../img/price/champion-card.png);
+}
+.media-card-03 {
+  background-image: url(./../../img/price/master-classes-card.png);
+}
+.media-card-04 {
+  background-image: url(./../../img/price/perfomances-card.png);
+}
+.media-card-05 {
+  background-image: url(./../../img/price/choreography-card.png);
+}
+.media-card-06 {
+  background-image: url(./../../img/price/holidays-card.png);
+}
+.media-card-01,
+.media-card-02,
+.media-card-03,
+.media-card-04,
+.media-card-05,
+.media-card-06 img {
+  width: 268px;
+  height: 268px;
+  overflow: hidden;
+  transition: all 0.2s ease-in;
+}
+
+.media-card-01,
+.media-card-02,
+.media-card-03,
+.media-card-04,
+.media-card-05,
+.media-card-06 {
+  /* border-radius: 15px; */
+  overflow: hidden;
+  transition: all 0.2s ease-in;
+}
+
+.media-card-01:hover,
+.media-card-02:hover,
+.media-card-03:hover,
+.media-card-04:hover,
+.media-card-05:hover,
+.media-card-06:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 15px #73d6d3;
+}
+.media_row a,
+.media_row_02 a {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  transition: color 0.2 ease;
+}
+.media_row a:hover {
+  color: rgb(19, 146, 146);
+}
+.media_row_02 a:hover {
+  color: rgb(19, 146, 146);
+}
+
+.media-title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 61px;
+}
+.media-title::after {
+  top: 18px;
+  position: absolute;
+  content: "";
+  width: 125px;
+  height: 30px;
+  font-weight: 700;
+  font-size: 32px;
+  transform: translateX(-18%);
+  line-height: 39px;
+  background-image: url(./../../img/price/media-icon.svg);
+}
+.media-title::before {
+  position: absolute;
+  bottom: -8px;
+  content: "";
+  width: 1316px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.blur-03::after {
+  position: absolute;
+  content: "";
+  background: rgba(93, 201, 216, 0.74);
+  filter: blur(150px);
+  width: 179px;
+  height: 149px;
+  transform: translate(-908px, -366px);
+}

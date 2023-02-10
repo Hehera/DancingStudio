@@ -1,0 +1,114 @@
+/* reset and base styles  Скидуємо стандатний дизайн за замовчуванням */
+*,
+*::after {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  /* фінальна ширина яку задамо,буде разом з рамкою падінгом і бордером  */
+  box-sizing: border-box;
+}
+* {
+  scroll-behavior: smooth;
+}
+/* відвідувані силки(links) */
+a,
+a:visited {
+  /* буде колір як в body  */
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:focus,
+a:active {
+  /* Свойство outline задаёт дополнительную рамку вокруг элемента, за пределами его CSS-блока. */
+  outline: none;
+}
+
+/* Common  */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+/* необезательно смотрим по макету */
+p + p {
+  margin-top: 1em;
+}
+/* скинули кружочки маркери  */
+ul {
+  list-style: none;
+}
+
+img,
+svg {
+  /* баг */
+  vertical-align: top;
+  /* шоб не виходила картинка за межі блока */
+  max-width: 100%;
+  height: auto;
+}
+
+/* form(форми)  */
+input,
+textarea,
+button,
+select {
+  color: #ffffff;
+
+  background: #000;
+  /* font-family: inherit; */
+  /* font-size: inherit; */
+}
+
+/* в инете появляется крестик в explore,поэтому сбросим его  */
+input::-ms-clear {
+  display: none;
+}
+
+/* Кнопки */
+button,
+input[type="submit"] {
+  /* щоб стали в одну линию  */
+  display: inline-block;
+  /* тінь блока */
+  box-shadow: none;
+  /* робимо прозорий колір фона */
+  background-color: transparent;
+  /* фон */
+  background: none;
+  /* вказівний палець і був сам курсор  */
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  /* Свойство outline задаёт дополнительную рамку вокруг элемента, за пределами его CSS-блока. */
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+/* связка input label  */
+label {
+  cursor: pointer;
+}
+legend {
+  display: block;
+}

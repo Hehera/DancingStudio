@@ -1,0 +1,120 @@
+.connect-title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 22px;
+  margin-top: 140px;
+}
+
+.connect-title::after {
+  position: absolute;
+  bottom: -15px;
+  content: "";
+  width: 1316px;
+  height: 2px;
+  background-color: #fff;
+}
+.connect-title::before {
+  top: 3px;
+  position: absolute;
+  content: "";
+  width: 400px;
+  height: 28px;
+  font-weight: 700;
+  font-size: 32px;
+  transform: translateX(-14%);
+  line-height: 39px;
+  background-image: url(./../../img/connecting/connect-icon.svg);
+}
+
+.connect-title-02 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.left-side {
+  position: relative;
+  width: 464px;
+  height: 373px;
+  padding-right: 86px;
+  margin-top: -126px;
+}
+
+.left-side::after {
+  position: absolute;
+  width: 461px;
+  height: 368px;
+  top: -2px;
+  left: -38px;
+  background-image: url(./../../img/connecting/border-connect.svg);
+  content: "";
+  z-index: -1;
+}
+.connect_row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-box {
+  position: relative;
+  margin: 31px 0px;
+}
+.input-box::after {
+  position: absolute;
+  width: 380px;
+  content: "";
+  bottom: 0;
+  left: 0;
+  height: 33px;
+  border-bottom: 1px solid #fff7f7;
+  z-index: -1;
+}
+
+textarea {
+  width: 380px;
+  height: 90px;
+  resize: none;
+  border: 1px solid #ffffff;
+}
+
+.button {
+  display: inline-block;
+  float: right;
+}
+.button input[type="button"] {
+  font-weight: 600;
+  font-size: 14px;
+  padding: 6px 28px;
+  background: #438790;
+  transition: 0.2s;
+}
+
+.button input[type="button"]:hover {
+  background: rgb(53, 90, 90);
+}
+
+.connect_img img {
+  margin-top: 72px;
+  width: 620px;
+  height: 680px;
+}
+
+
+
+
+.blur-02::after {
+  position: absolute;
+  content: "";
+  background: rgba(93, 201, 216, 0.74);
+  filter: blur(150px);
+  width: 179px;
+  height: 149px;
+  transform: translate(850px, -359px);
+}

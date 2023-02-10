@@ -1,0 +1,197 @@
+.header {
+  padding-top: 37px;
+}
+.header_row {
+  display: flex;
+  align-items: center;
+}
+.header-logo {
+  transform: translateY(-20%);
+}
+.header-name-logo {
+  margin-right: 502px;
+}
+.header-name-logo-01 {
+  margin-left: 6px;
+  font-family: "Mongolian Baiti";
+  font-style: normal;
+  font-size: 20px;
+}
+.header-name-logo-02 {
+  transform: translateY(-10%);
+  font-family: "My Soul";
+  font-style: normal;
+  font-size: 32px;
+}
+.header_nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+.header_nav *:not(:last-child) {
+  margin-right: 22px;
+}
+.header_nav ul {
+  display: flex;
+}
+
+.header_nav a {
+  position: relative;
+}
+.header_nav a::after {
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: aliceblue;
+  opacity: 0;
+  transition: all 0.2s ease-in;
+}
+.header_nav a:hover::after {
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: aliceblue;
+  opacity: 1;
+}
+.header_nav::before {
+  z-index: -1;
+  transform: translateX(280px);
+  position: absolute;
+  content: "";
+  width: 69px;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 1px;
+  top: 81px;
+}
+
+/* Header-home  */
+.home {
+  margin-top: 131px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-content-row {
+  display: flex;
+}
+.header-content {
+  font-family: "Gill Sans MT";
+  max-width: 454px;
+}
+.header-content-title {
+  line-height: 46px;
+}
+.header-content-subtitle {
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 107.15%;
+  /* letter-spacing: 6px; */
+}
+.header-content-subtitle-02 {
+  text-align: end;
+  /* padding-left: 130px; */
+  position: relative;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 107.15%;
+}
+.header-content-subtitle-02::after {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 75px;
+  font-family: "Pinyon Script";
+  font-size: 96px;
+  line-height: 107.15%;
+  color: rgba(93, 201, 216, 0.1);
+  background: url(./../../img/Header/Blue.svg), no-repeat;
+  left: 110px;
+  bottom: -13px;
+}
+
+.btn {
+  position: relative;
+  text-align: center;
+  padding: 14px 49px;
+  margin-top: 154px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 140%;
+  position: absolute;
+  width: 275px;
+  height: 73px;
+  background: #438791;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 275px;
+  height: 73px;
+  border: 1px solid #dddcdc;
+  left: -7px;
+  top: 8px;
+  filter: drop-shadow(0px 20px 35px rgba(63, 26, 75, 0.14));
+  z-index: -1;
+}
+.btn:hover,
+.btn:focus {
+  transition: 0.4s ease;
+  background-color: #114455;
+}
+.btn-text {
+  font-family: "Oooh Baby";
+  line-height: 49px;
+  color: #ffffff;
+  margin-top: 245px;
+}
+
+.header-img {
+  position: absolute;
+  width: 753px;
+  height: 936px;
+  top: 3%;
+  right: 15%;
+  z-index: -1;
+}
+.blur-08::after {
+  transform: translate(-274px, 247px);
+  position: absolute;
+  content: "";
+  background: rgba(93, 201, 216, 0.74);
+  filter: blur(130px);
+  width: 279px;
+  height: 249px;
+}
+.blur-10::before {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  background: rgba(93, 201, 216, 0.74);
+  filter: blur(97px);
+  width: 295px;
+  height: 283px;
+  transform: translate(1100px, -1314px);
+}
+.blur-11::before {
+  content: "";
+  background: rgba(93, 201, 216, 0.74);
+  filter: blur(97px);
+  position: absolute;
+  width: 179px;
+  height: 149px;
+  transform: translate(80px, 10px);
+  z-index: -1;
+}

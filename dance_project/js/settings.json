@@ -1,0 +1,17 @@
+{
+  "prettier.arrowParens": "always",
+  "prettier.bracketSpacing": false,
+  "editor.formatOnSave": true,
+  "html.format.wrapAttributes": "auto",
+  "html.format.preserveNewLines": false
+  
+}
+
+
+"[html]": {
+  "editor.formatOnSave": true
+}
+
+"[css]": { 
+  "editor.formatOnSave": true
+}

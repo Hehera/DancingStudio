@@ -1,0 +1,31 @@
+.footer_row {
+  margin-top: 42px;
+  display: flex;
+}
+.footer-copyright {
+  width: 151px;
+  height: 54px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 179.9%;
+  color: #1d1d1d;
+  margin-right: 225px;
+}
+
+.footer_nav {
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+.footer_nav *:not(:last-child) {
+  margin-right: 22px;
+}
+.footer_nav ul {
+  display: flex;
+  margin-right: 227px;
+}
+
+.header_nav a {
+  position: relative;
+}
